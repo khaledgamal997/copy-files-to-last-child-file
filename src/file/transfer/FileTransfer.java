@@ -45,16 +45,10 @@ public class FileTransfer {
 
     public static void main(String[] args) throws IOException {
         
-
         File sourceFolder = new File("D:\\newdest");
         File destinationFolder = new File("D:\\finaldest\\final11");
 
-//        List<Path> x = new ArrayList<>();
-//        x = FileTransfer.listFiles(parent);
-//        FileTransfer.copyfiles(FileTransfer.listFiles(parent), dest);
-//        System.out.println(System.currentTimeMillis());
-        FileTransfer.copyListedFilesToDirectory(sourceFolder, destinationFolder);
-//        System.out.println(System.currentTimeMillis());
+ FileTransfer.copyListedFilesToDirectory(sourceFolder, destinationFolder);
 
     }
 
