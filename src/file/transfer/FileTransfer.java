@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package file.transfer;
 
 import java.io.File;
@@ -45,16 +41,10 @@ public class FileTransfer {
         }
         for (Path x : p) {
             FileUtils.copyFileToDirectory(x.toFile(), dest);
-            //LOGGER.log(Level.INFO, "file {0} copied to the {1}", new Object[]{x.toAbsolutePath(), dest});
-        }
     }
 
     public static void main(String[] args) throws IOException {
-        /**
-         * Scanner sc = new Scanner(System.in); System.out.println("enter
-         * source"); String source = sc.next(); System.out.println("enterdest");
-         * String destination = sc.next();
-         */
+        
 
         File sourceFolder = new File("D:\\newdest");
         File destinationFolder = new File("D:\\finaldest\\final11");
